@@ -1,0 +1,36 @@
+.tab {
+    &-bar {
+        border-bottom: 1px #E9E9E9 solid;
+        &_item {
+            display: block;
+            float: left;
+            font-size:16px;
+            font-weight:400;
+            color:#333;
+            padding-bottom: 10px;
+            margin-right: 64px;
+            margin-bottom: -1px;
+            &.active {
+                color: #DF6250;
+                font-weight: 600;
+                border-bottom: 2px solid #DF6250;
+            }
+        }
+    }
+    &-body {
+        &_item {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    &-condition {
+        &_item {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+}

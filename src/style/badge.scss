@@ -1,0 +1,36 @@
+.badge {
+    background: #ccc;
+    color: #333;
+    border-radius: 4px;
+    padding: 2px 6px 3px;
+    margin-right: 16px;
+    font-size: 14px;
+    &-default {
+        background-color: #F8F8F8;
+        color: #BCBCBC;
+    }
+    &-primary {
+        background-color: #ECF4FF;
+        color: #268EFF;
+    }
+    &-info {
+        background-color: #F1FBFC;
+        color: #76D8DD;
+    }
+    &-danger {
+        background-color: #FCEFED;
+        color: #DF6250;
+    }
+    &-purple {
+        background-color: #EFF1FD;
+        color: #6372E9;
+    }
+    &-warn {
+        background-color: #FEF2E6;
+        color: #FA8A14;
+    }
+    &-success {
+        background-color: #EFFBF3;
+        color: #65D78A;
+    }
+}

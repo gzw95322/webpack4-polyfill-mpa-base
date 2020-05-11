@@ -1,0 +1,236 @@
+.pagingUl {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 30px;
+}
+
+.pagingUl li {
+    float: left;
+    width: 34px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.pagingUl li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    line-height: 27px;
+    color: #333;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+    transition: all 0.2s linear;
+}
+
+.prv,
+.next {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 12px;
+    cursor: pointer;
+    background: #fff;
+    padding: 0 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+    transition: all 0.2s linear;
+}
+
+.first,
+.prv {
+    margin-right: 5px;
+}
+
+.last {
+    margin-right: 5px;
+}
+
+.first,
+.last {
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 12px;
+    cursor: pointer;
+    background: #fff;
+    padding: 0 3px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+    transition: all 0.2s linear;
+}
+
+.prv.disabled,
+.next.disabled,
+.first.disabled,
+.last.disabled {
+    cursor: not-allowed;
+    color: #b3b3b3 !important;
+}
+
+.prv:hover,
+.next:hover,
+.first:hover,
+.last:hover,
+.pagingUl li a:hover,
+.activP-c,
+.activP-a,
+.activP-d {
+    background-color: #fff !important;
+    color: #DF6250 !important;
+    border: 1px solid #DF6250 !important;
+}
+
+.prv.disabled:hover,
+.next.disabled:hover,
+.first.disabled:hover,
+.last.disabled:hover {
+    color: #b3b3b3 !important;
+    border: 1px solid #ddd !important;
+}
+
+.page-jump {
+    font-size: 12px;
+    color: #333333;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+.page-jump span {
+    vertical-align: middle;
+}
+
+.jump-input {
+    vertical-align: middle;
+    width: 48px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    height: 28px;
+    *height: 18px;
+    *line-height: 18px;
+    margin: 0 5px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.jump-input:focus {
+    outline: none;
+    border-color: #DF6250;
+}
+
+.jump-go {
+    vertical-align: middle;
+    border: 1px #ddd solid;
+    color: #333;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+}
+
+.jump-go:hover {
+    border-color: #DF6250;
+    color: #DF6250;
+}
+
+.page-sizes {
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    border: 1px #ddd solid;
+    color: #333;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-sizes:hover {
+    border-color: #DF6250;
+    transition: all 0.2s linear;
+}
+
+.page-sizes .iconfont {
+    font-size: 10px;
+    display: inline-block;
+    transition: all 0.2s linear;
+    transform: rotate(0deg);
+    *display: inline;
+}
+
+.sizes-list {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 75px;
+    box-shadow: 0px 1px 6px -3px #b3b3b3;
+}
+
+.sizes-list a {
+    display: block;
+    position: relative;
+    padding: 5px;
+    color: #333;
+}
+
+.sizes-list a:hover {
+    color: #DF6250;
+    transition: all 0.2s linear;
+}
+
+.sizes-list a.active {
+    color: #DF6250;
+    font-weight: 600;
+}
+
+.page-sizes.active .iconfont {
+    transform: rotate(180deg);
+}
+
+.page-sizes.active .sizes-list {
+    display: block;
+}

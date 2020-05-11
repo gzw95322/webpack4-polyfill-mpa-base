@@ -1,0 +1,34 @@
+.switch-btn {
+    &-container {
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        padding-left: 35px;
+    }
+    .icon {
+        &font {
+            font-size: 28px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s linear;
+            cursor: pointer;
+        }
+        &-switch {
+            &-on {
+                color: #DF6250;
+            }
+            &-off {
+                color: #F1F1F1;
+            }
+        }
+    }
+    &-label {
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+.clearfix {
+    clear: both;
+}

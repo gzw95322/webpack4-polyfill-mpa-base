@@ -1,0 +1,60 @@
+.select {
+    position: relative;
+    cursor: pointer;
+}
+.select .arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -6px;
+    *margin-top: -11px;
+    font-size: 11px;
+    color: #8C8C8C;
+    transition: all 0.2s linear;
+    transform: rotate(0deg);
+    /* border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent; */
+}
+.select .arrow-down.active {
+    transform: rotate(180deg);
+}
+.select .select_text {
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* height: 34px;
+    line-height: 34px; */
+}
+.select_ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 900;
+    top: 33px;
+    left: -1px;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    box-shadow:  0px 1px 4px 0px rgba(0,0,0,0.2);
+    background: #fff;
+    border-radius: 4px;
+}
+.select_ul li {
+    text-align: justify;
+    text-justify: newspaper;
+    word-break: break-all;
+    line-height: 32px;
+    text-indent: 10px;
+    cursor: pointer;
+}
+.select_ul li:hover {
+    color: #fff;
+    background: #e68373;
+}
+.select_ul li.cur {
+    color: #fff;
+    background: #c5331d;
+}
